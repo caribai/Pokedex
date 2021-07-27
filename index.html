@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Mi Css-->
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="text-center pt-5">
+        <h1>PokeApi Ejemplo</h1>
+        <p class="lead">Un ejemplo de consulta api con ajax y mostrando una grafica con canvas jquery
+        </p>
+    </header>
+    <section>
+        <form>
+            <div class="row w-50 m-auto">
+                <div class="col-12 col-sm-6">
+                    <label for="entrada">Ingrese número de pokemon:</label>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" id="pokeInput">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 d-block mx-auto my-3">Consultar</button>
+        </form>
+    </section>
+        <section>
+            <div class="row container">
+                <div id="pokeInfo" class="col-12 col-sm-6">
+
+                </div>
+                <div class="col-12 col-sm-6" id="pokeStats" style="height: 300px; width: auto">
+
+                </div>
+            </div>
+        </section>
+    <!--CANVASJS-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!--Mi JS-->
+    <script src="assets/js/index.js"></script>
+    
+</body>
+</html>
